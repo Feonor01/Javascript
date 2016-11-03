@@ -5,25 +5,23 @@ prvo proci kroz ceo niz i dobiti neke vrednosti npr 5 je na pozicij 1, 2, 6,
 i tek posle ispisati te vrednsti
 koristiti ispisivanje na papiru i debugger -->
 <script>
-
-var list = [11, 3, 5, 1, 3, 6, 9];
+var list = [11, 3, 5, 1, 3, 6, 9, 1, 1, 2, 5, 5, 3, 4, 66, 2, 3];
 var found = 0;
-var text = "";
+var nizpozicija = []; //staviti to da bude niz a ne text
 for(var i=0; i < list.length; i++){
 	
 	if(list[i] === 3 ){
 	
 	found++;
-	text += i //+ " pozicija ";
+	nizpozicija.push(i); //+ " pozicija ";
 	//return text;
 	//document.write('i=' + i + '<br>');
 	}
 	//document.write('i=' + i + '<br>');
-
 }
 //content = text + " pozicija";
-
-for(var j=0; j<text.length; j++)
-alert('pozicija ' + text[j]);
+//console.log(i);
+for(var j=0; j<nizpozicija.length; j++)
+alert('pozicija ' + nizpozicija[j]);
 document.write('ima ih: ' + found);
 </script>
