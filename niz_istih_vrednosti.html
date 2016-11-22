@@ -7,21 +7,30 @@ koristiti ispisivanje na papiru i debugger -->
 <script>
 var list = [11, 3, 5, 1, 3, 6, 9, 1, 1, 2, 5, 5, 3, 4, 66, 2, 3];
 var found = 0;
-var nizpozicija = []; //staviti to da bude niz a ne text
-for(var i=0; i < list.length; i++){
+var nizpozicija = [];
+var resutl = function findOccurrences (val){
+
+ //staviti to da bude niz a ne text
+
+
+	for(var i=0; i < list.length; i++){
 	
-	if(list[i] === 3 ){
+	if(list[i] === val ){
 	
 	found++;
 	nizpozicija.push(i); //+ " pozicija ";
 	//return text;
 	//document.write('i=' + i + '<br>');
+		}
+	
 	}
-	//document.write('i=' + i + '<br>');
+
 }
-//content = text + " pozicija";
-//console.log(i);
 for(var j=0; j<nizpozicija.length; j++)
-alert('pozicija ' + nizpozicija[j]);
+alert(resutl(3));
+
+
+//alert('pozicija ' + nizpozicija[j])
 document.write('ima ih: ' + found);
-</script>
+</script>10116, 10134, 10131, 10095, 10119
+<!-- Napraviti funkciju koja kao parametar prima taj broj npr.3, napraviti funkciju koja kad je pozovem iz koda radi -->
