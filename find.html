@@ -1,0 +1,43 @@
+<script>
+//var nizpozicija = [];
+
+function findOccurrences(list, number){
+var nizpozicija = [];
+ //staviti to da bude niz a ne text
+	for(var i=0; i < list.length; i++){
+	
+	if(list[i] === number ){
+	
+	//found++;
+	nizpozicija.push(i);
+		}
+	}
+return nizpozicija;
+	//return nizpozicija[j];
+}
+
+var list1 = [11, 3, 5, 1, 3, 6, 9, 1, 1, 2, 5, 5, 3, 4, 66, 2, 3, 3];
+var list2 = [1,2,3,4,5,6,6,3];
+
+var m = findOccurrences(list1, 3);
+var k = findOccurrences(list2, 3);
+
+function DisplayValue (m, k){
+var nizpozicija = [];
+	for ( i =0; i < m.length; i++) {
+		document.write(m[i] + "<br>");
+
+	};
+	document.write("<br>");
+	for ( i =0; i < k.length; i++) {
+		document.write(k[i] + "<br>");
+	};
+return nizpozicija;
+}
+DisplayValue(m,k);
+document.write("<br>");
+// DisplayValue(k);
+
+
+
+</script>

@@ -8,7 +8,7 @@ koristiti ispisivanje na papiru i debugger -->
 var list = [11, 3, 5, 1, 3, 6, 9, 1, 1, 2, 5, 5, 3, 4, 66, 2, 3];
 var found = 0;
 var nizpozicija = [];
-var resutl = function findOccurrences (val){
+var prikazi = function findOccurrences(val){
 
  //staviti to da bude niz a ne text
 
@@ -18,19 +18,24 @@ var resutl = function findOccurrences (val){
 	if(list[i] === val ){
 	
 	found++;
-	nizpozicija.push(i); //+ " pozicija ";
-	//return text;
-	//document.write('i=' + i + '<br>');
+	nizpozicija.push(i);
 		}
-	
 	}
-
+return val;
+	//return nizpozicija[j];
 }
 for(var j=0; j<nizpozicija.length; j++)
-alert(resutl(3));
 
+var result = prikazi(3);
+var result2 = nizpozicija[j];
+var rez = result + result2;
+document.write(rez);
 
 //alert('pozicija ' + nizpozicija[j])
 document.write('ima ih: ' + found);
-</script>10116, 10134, 10131, 10095, 10119
+</script>
 <!-- Napraviti funkciju koja kao parametar prima taj broj npr.3, napraviti funkciju koja kad je pozovem iz koda radi -->
+<!--Pitanja :
+1. Zasto mi je kad uradim debuging nizpozicija.lenght = 0?
+2. Da li je dobro ovo sto sam stavio var result = prikaz(3);
+3
