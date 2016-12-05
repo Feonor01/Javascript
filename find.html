@@ -22,21 +22,25 @@ var list2 = [1,2,3,4,5,6,6,3];
 var m = findOccurrences(list1, 3);
 var k = findOccurrences(list2, 3);
 
-function DisplayValue (m, k){
-var nizpozicija = [];
-	for ( i =0; i < m.length; i++) {
-		document.write(m[i] + "<br>");
-
+function DisplayValue (value){
+//var nizpozicija = [];
+	for ( i =0; i < value.length; i++) {
+		//document.write(m[i] + "<br>");
+		return value;
 	};
-	document.write("<br>");
-	for ( i =0; i < k.length; i++) {
-		document.write(k[i] + "<br>");
-	};
-return nizpozicija;
+	//document.write("<br>");
+	// for ( i =0; i < k.length; i++) {
+	// 	document.write(k[i] + "<br>");
+	// };
 }
-DisplayValue(m,k);
+var valueM = DisplayValue(m);
+document.write(valueM +"<br>");
+
 document.write("<br>");
-// DisplayValue(k);
+
+var valueK = DisplayValue(k);
+document.write(valueK +"<br>");
+
 
 
 
