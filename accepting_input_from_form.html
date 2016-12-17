@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Login Form</title>
+	</head>
+	<body>
+		<form id="form1">
+		Name:<input type="text" id="name" />
+		</form>
+		<button onClick="addAtribute()" >Submit</button>
+		<div id="display"></div>
+	<script language="javascript">
+	
+		arrAtribute = [];
+		function addAtribute( value ){
+			var name = document.getElementById("name").value;
+			arrAtribute.push(value);
+			
+			console.log(name + arrAtribute.join(", "));
+
+		}
+
+	</script>
+
+	</body>
+</html>
